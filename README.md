@@ -1,2 +1,2 @@
 # ETHKyiv-AI
-ETHKyiv =
+ETHKyiv AI Agents Hackaton =)
