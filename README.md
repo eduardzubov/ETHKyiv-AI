@@ -1,0 +1,2 @@
+# ETHKyiv-AI
+ETHKyiv =
