@@ -11,7 +11,7 @@
             "runtimeExecutable": "/bin/bash",
             "runtimeArgs": [
                 "-c",
-                "source ~/.nvm/nvm.sh && cd agent && nvm use && pnpm start --character='characters/grichka.character.json'"
+                "source ~/.nvm/nvm.sh && cd agent && nvm use && pnpm start --character='characters/tate.character.json'"
             ],
             "skipFiles": [
                 "<node_internals>/**"
