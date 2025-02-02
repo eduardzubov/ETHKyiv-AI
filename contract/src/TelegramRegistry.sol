@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 contract TelegramRegistry {
     // Константа для оплати реєстрації (0,005 ETH)
-    uint256 public constant REGISTRATION_FEE = 0.005 ether;
+    uint256 public constant REGISTRATION_FEE = 0.0001 ether;
 
     // Відображення: Telegram ID (рядок) -> адреса користувача, яка здійснила реєстрацію
     mapping(string => address) public telegramOwners;
@@ -45,6 +45,14 @@ contract TelegramRegistry {
      */
     function isRegistered(string calldata telegramId) external view returns (bool) {
         return telegramOwners[telegramId] != address(0);
+    }
+
+    /**
+     * @notice Функція для видалення Telegram ID з реєстру.
+     * @param telegramId Рядок з Telegram ID.
+     */
+    function deleteTelegramId(string calldata telegramId) external {
+        delete telegramOwners[telegramId];
     }
 
     /**
